@@ -1,0 +1,20 @@
+// Função para aumentar/diminuir fonte
+let currentFontSize = 16;
+const body = document.body;
+document.getElementById('increase-font').addEventListener('click', function() {
+    if (currentFontSize < 24) {
+        currentFontSize += 2;
+        body.style.fontSize = currentFontSize + 'px';
+    }
+});
+document.getElementById('decrease-font').addEventListener('click', function() {
+    if (currentFontSize > 12) {
+        currentFontSize -= 2;
+        body.style.fontSize = currentFontSize + 'px';
+    }
+});
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Mensagem enviada com sucesso!');
+    this.reset();
+});
