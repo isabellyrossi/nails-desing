@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rossi Nails</title>
+    <style>
+    /* Botões de fonte */
+    .font-buttons {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .font-buttons button {
+        background: #ffd1dc;
+        color: #e75480;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 1em;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+    .font-buttons button:hover {
+        background: #e75480;
+        color: #fff;
+    }
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        background: #fffafc;
+        color: #333;
+    }
+    header {
+        background: #e75480;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s;
+    }
+    nav a:hover {
+        color: #ffd1dc;
+    }
+    main {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    section {
+        margin-bottom: 40px;
+    }
+    h2 {
+        color: #e75480;
+        margin-bottom: 10px;
+    }
+    .galeria {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .galeria img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(231,84,128,0.15);
+        border: 2px solid #ffd1dc;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 400px;
+    }
+    input, textarea {
+        padding: 8px;
+        border: 1px solid #e75480;
+        border-radius: 6px;
+        font-size: 1em;
+    }
+    button {
+        background: #e75480;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    button:hover {
+        background: #d13b6b;
+    }
+    footer {
+        background: #ffd1dc;
+        color: #e75480;
+        text-align: center;
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rossi Nails</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tendencias">Tendências</a></li>
+            </ul>
+        </nav>
+        <div class="font-buttons">
+            <button id="decrease-font">A-</button>
+            <button id="increase-font">A+</button>
+        </div>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Bem-vinda ao universo das unhas! Aqui você encontra dicas essenciais para manter suas unhas saudáveis e bonitas, inspirações de design e as últimas tendências do mundo nail art.</p>
+            <ul>
+                <li><strong>Cuidados básicos:</strong> Mantenha as unhas sempre limpas, evite roer e hidrate as cutículas regularmente.</li>
+                <li><strong>Fortalecimento:</strong> Use bases fortalecedoras e evite o uso excessivo de produtos químicos agressivos.</li>
+                <li><strong>Alimentação:</strong> Uma dieta rica em vitaminas e minerais contribui para unhas mais fortes.</li>
+                <li><strong>Design:</strong> Explore diferentes estilos, como francesinha, minimalismo, nail art geométrica e muito mais.</li>
+            </ul>
+            <h3>Alongamento em Gel</h3>
+            <p>O alongamento em gel é uma técnica que utiliza o gel UV para criar unhas mais longas, resistentes e naturais. O gel é moldado sobre a unha natural ou sobre extensores, sendo curado em cabine de luz UV ou LED. Os principais benefícios incluem:</p>
+            <ul>
+                <li>Aspecto natural e brilho intenso.</li>
+                <li>Alta durabilidade e resistência.</li>
+                <li>Protege a unha natural contra quebras.</li>
+                <li>Permite diversos formatos e decorações.</li>
+            </ul>
+            <h4>Tipos de Alongamento em Gel</h4>
+            <ul>
+                <li><strong>Fibra de Vidro:</strong> Fios de fibra são aplicados sobre a unha, moldados e cobertos com gel. Proporciona leveza, resistência e aspecto natural. Ideal para quem busca alongamento discreto e duradouro.</li>
+                <li><strong>Molde F1:</strong> Utiliza moldes plásticos reutilizáveis para criar o formato da unha. O gel é aplicado dentro do molde e pressionado sobre a unha, garantindo curvatura perfeita e acabamento profissional.</li>
+                <li><strong>Gel na Tips:</strong> Tips (extensores plásticos) são colados na ponta da unha natural e cobertos com gel, criando comprimento e formato desejado. É uma técnica rápida e indicada para quem deseja unhas longas imediatamente.</li>
+                <li><strong>Banho de Gel:</strong> O gel é aplicado diretamente sobre a unha natural, sem alongar, apenas para fortalecer e dar brilho. Ideal para quem quer unhas mais resistentes sem aumentar o comprimento.</li>
+            </ul>
+            <p>Todos os procedimentos devem ser realizados por profissionais qualificados, garantindo saúde e beleza para suas unhas!</p>
+        </section>
+        <section id="tendencias">
+            <h2>Tendências</h2>
+            <ul>
+                <li>Francesinha moderna</li>
+                <li>Unhas decoradas minimalistas</li>
+                <li>Glitter e efeitos cromados</li>
+                <li>Arte geométrica</li>
+            </ul>
+        </section>
+        <section id="contato">
+            
+        </section>
+    </main>
+    <footer>
+    <p>&copy; 2025 Rossi Nails. Todos os direitos reservados.</p>
+    <p>Feito por Isabelly Victoria Soares Vida Rossi</p>
+    </footer>
+    <script src="assets/script.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
